@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Projects • Matt Lester</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+  <div class="navbar">
+    <div class="container">
+      <div class="brand">Matt Lester • Engineering Portfolio</div>
+      <nav class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="resume/Resume.pdf">Resume</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container section">
+    <h1>Projects</h1>
+
+    <section class="card">
+      <h2>Hydraulically Actuated Tube Bender Retrofit</h2>
+      <p><strong>Summary:</strong> Retrofitted a manual tube bender used in Boise State’s shop with a hydraulic ram and mobile frame to enable single‑operator bends, reduce effort, and improve safety.</p>
+      <p><strong>My Role:</strong> Hand calculations for force/stress & component sizing; SolidWorks 3D modeling & drawings; MIG welding; plasma cutting; assembly & testing.</p>
+      <p><strong>Tools:</strong> SolidWorks, manual calculations, MIG welding, CNC plasma, manual mill & lathe.</p>
+      <ul>
+        <li>Before: floor‑bolted, high manual effort (sometimes 3 people + 12ft cheater bar), difficult to relocate.</li>
+        <li>After: hydraulic actuation; mobile frame moved by one person; dramatically improved ease of use and safety.</li>
+      </ul>
+      <p><a class="btn" href="docs/tube-bender-presentation.pdf">View Presentation (PDF)</a> • <a href="images/tube-bender/">Photo Gallery</a></p>
+    </section>
+
+    <section class="card">
+      <h2>VARScent — VR Scent Delivery Attachment</h2>
+      <p><strong>Summary:</strong> Designed a swappable 4‑scent delivery module integrated with a VR headset to evaluate olfactory memory for potential Alzheimer’s diagnosis and longitudinal tracking.</p>
+      <p><strong>My Role:</strong> Sole engineer on a multi‑disciplinary team (bio/chem/software). End‑to‑end design and implementation of the scent module.</p>
+      <p><strong>Tools:</strong> Arduino microcontroller, C++, 3D printing/CAD, ultrasonic atomizers.</p>
+      <ul>
+        <li>VR experience shows 4 objects; device delivers a scent vapor. Eye‑tracking measures recognition time vs. normative baselines or patient history.</li>
+        <li>Housings/cartridges are swappable and refillable; Arduino exposes simple commands (scent ID, duration).</li>
+      </ul>
+      <p><a class="btn" href="docs/varscent-presentation.pdf">View Presentation (PDF)</a> • <a href="images/varscent/">Photos</a> • <a href="https://github.com/">Code (link)</a></p>
+    </section>
+
+    <section class="card">
+      <h2>Automated KPI Tracker</h2>
+      <p><strong>Summary:</strong> Python automation that reads an Excel workbook on a schedule, computes weekly and monthly KPIs by project complexity, and emails results to stakeholders.</p>
+      <p><strong>My Role:</strong> Sole developer; identified requirements, implemented data pipeline, and deployed scheduled runs.</p>
+      <p><strong>Stack:</strong> Python, pandas/openpyxl, SMTP/email, Windows Task Scheduler or cron.</p>
+      <ul>
+        <li>Weekly: projects initiated, type by complexity, and assignees.</li>
+        <li>Monthly: time‑to‑quote, time‑to‑submit, and overall completion, with different targets by complexity tier.</li>
+      </ul>
+      <p><a class="btn" href="docs/kpi-tracker/">Code & Docs</a> • <a href="images/kpi-tracker/">Screenshots</a></p>
+    </section>
+
+    <section class="card">
+      <h2>Woodworking Gallery</h2>
+      <p><strong>Highlights:</strong> RFID American flag concealment box with pneumatic struts; name‑sake concealment box with magnetic lock; kids table and chair; back‑lit cornhole boards; planters; cutting boards; earring sets; coasters; wall‑mounted PS4 hardware; and more.</p>
+      <p><a class="btn" href="images/woodworking/">Open Gallery</a></p>
+    </section>
+
+    <hr/>
+    <p><em>Tip:</em> Replace the placeholder links with your actual PDF/photos. Keep file names lowercase with hyphens for clean URLs.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>© <span id="year"></span> Matt Lester. Built with GitHub Pages.</div>
+    </div>
+    <script>document.getElementById('year').textContent=(new Date()).getFullYear();</script>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
