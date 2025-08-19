@@ -1,44 +1,89 @@
-<main class="container section">
-  <h1>Projects</h1>
-  <div class="grid cards">
-    <article class="card">
-      <a href="images/tube-bender/index.html">
-        <img src="images/tube-bender/thumb.svg" alt="Hydraulic Tube Bender thumbnail">
-      </a>
-      <h2>Hydraulic Tube Bender Retrofit</h2>
-      <p>Retrofitted a manual tube bender with a hydraulic ram and mobile frame, transforming it into a safe, single-operator tool.</p>
-      <a class="btn" href="images/tube-bender/index.html">Photo Gallery</a>
-      <a class="btn" href="docs/tube-bender.pdf">Documentation</a>
-    </article>
-
-    <article class="card">
-      <a href="images/varscent/index.html">
-        <img src="images/varscent/thumb.svg" alt="VARScent thumbnail">
-      </a>
-      <h2>VARScent – VR Scent Delivery</h2>
-      <p>Designed a VR scent-delivery module for Alzheimer’s research, integrating Arduino, C++, ultrasonic atomizers, and 3D printing.</p>
-      <a class="btn" href="images/varscent/index.html">Photo Gallery</a>
-      <a class="btn" href="docs/varscent.pdf">Documentation</a>
-    </article>
-
-    <article class="card">
-      <a href="images/kpi-tracker/index.html">
-        <img src="images/kpi-tracker/thumb.svg" alt="Automated KPI Tracker thumbnail">
-      </a>
-      <h2>Automated KPI Tracker</h2>
-      <p>Python script that automated weekly/monthly KPI reporting from Excel, saving hours of manual work for management.</p>
-      <a class="btn" href="images/kpi-tracker/index.html">Screenshots</a>
-      <a class="btn" href="docs/kpi-tracker.pdf">Documentation</a>
-    </article>
-
-    <article class="card">
-      <a href="images/woodworking/index.html">
-        <img src="images/woodworking/thumb.svg" alt="Woodworking thumbnail">
-      </a>
-      <h2>Woodworking Projects</h2>
-      <p>Personal builds including RFID-locked concealment boxes, furniture, and décor — blending functional design with craftsmanship.</p>
-      <a class="btn" href="images/woodworking/index.html">Gallery</a>
-      <a class="btn" href="docs/woodworking.pdf">Documentation</a>
-    </article>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Matt Lester • Engineering Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+  <div class="navbar">
+    <div class="container">
+      <div class="brand">Matt Lester • Engineering Portfolio</div>
+      <nav class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume/Resume.pdf">Resume</a>
+      </nav>
+    </div>
   </div>
-</main>
+
+  <main class="container section">
+    <h1>Welcome</h1>
+    <p>
+      I’m Matt Lester, a mechanical engineer with experience in design, fabrication,
+      coding, and multidisciplinary projects. This site showcases a selection of my work.
+    </p>
+
+    <h2>Projects</h2>
+    <div class="grid cards">
+      <article class="card">
+        <a href="images/tube-bender/index.html">
+          <img src="images/tube-bender/thumb.svg" alt="Hydraulic Tube Bender thumbnail">
+        </a>
+        <h2>Hydraulic Tube Bender Retrofit</h2>
+        <p>Retrofitted a manual tube bender with a hydraulic ram and mobile frame, transforming it into a safe, single-operator tool.</p>
+        <div class="actions">
+          <a class="btn" href="images/tube-bender/index.html">Photo Gallery</a>
+          <a class="btn" href="docs/tube-bender.pdf">Documentation</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="images/varscent/index.html">
+          <img src="images/varscent/thumb.svg" alt="VARScent thumbnail">
+        </a>
+        <h2>VARScent – VR Scent Delivery</h2>
+        <p>Designed a VR scent-delivery module for Alzheimer’s research, integrating Arduino, C++, ultrasonic atomizers, and 3D printing.</p>
+        <div class="actions">
+          <a class="btn" href="images/varscent/index.html">Photo Gallery</a>
+          <a class="btn" href="docs/varscent.pdf">Documentation</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="images/kpi-tracker/index.html">
+          <img src="images/kpi-tracker/thumb.svg" alt="Automated KPI Tracker thumbnail">
+        </a>
+        <h2>Automated KPI Tracker</h2>
+        <p>Python script that automated weekly/monthly KPI reporting from Excel, saving hours of manual work for management.</p>
+        <div class="actions">
+          <a class="btn" href="images/kpi-tracker/index.html">Screenshots</a>
+          <a class="btn" href="docs/kpi-tracker.pdf">Documentation</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="images/woodworking/index.html">
+          <img src="images/woodworking/thumb.svg" alt="Woodworking thumbnail">
+        </a>
+        <h2>Woodworking Projects</h2>
+        <p>Personal builds including RFID-locked concealment boxes, furniture, and décor — blending functional design with craftsmanship.</p>
+        <div class="actions">
+          <a class="btn" href="images/woodworking/index.html">Gallery</a>
+          <a class="btn" href="docs/woodworking.pdf">Documentation</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="footer">
+    <div class="container">© <span id="year"></span> Matt Lester</div>
+  </div>
+  <script>
+    document.getElementById('year').textContent=(new Date()).getFullYear();
+  </script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
