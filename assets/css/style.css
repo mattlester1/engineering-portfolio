@@ -30,4 +30,38 @@ a{color:var(--accent);text-decoration:none;} a:hover{text-decoration:underline;}
 .lightbox.show{display:flex;animation:fadeIn .3s ease;}
 @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
 
-@media (max-width:640px){.navlinks{display:none;}}
+/* === Gallery grid: 2 cols desktop, 1 col mobile; square thumbs === */
+.gallery-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* lock to 2 cols */
+  align-items: start;
+}
+
+.gallery-grid .card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: .75rem;
+}
+
+.gallery-grid .card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;   /* square preview */
+  object-fit: cover;     /* crop to square without distortion */
+  border-radius: .75rem;
+  border: 1px solid var(--border);
+  display: block;
+}
+
+.gallery-grid .card figcaption {
+  margin-top: .5rem;
+  color: var(--muted);
+}
+
+@media (max-width: 700px) {
+  .gallery-grid {
+    grid-template-columns: 1fr; /* single column on small screens */
+  }
+}
+
